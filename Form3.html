@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <style>
+        a{
+            border: 2px solid black ;
+            text-decoration: none;
+            margin-left: 120px;
+            border-radius: 30px;
+        }
+        a:hover{
+            background-color: aqua;
+        }
+        input[type=file]::file-selector-button:hover{
+        background-color: aqua;
+        border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form action="submit.html">
+        <fieldset style="height: 650px; width: 300px;">
+            <legend>Drive Registration Form</legend>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="image" src="images.jpg"><br><br>
+            <label for="name">NAME</label>
+            <input type="text" required id="name" name="name"><br><br>
+            <label for="tapid">TAPID</label>
+            <input type="text"required id="tapid" name="tapid"><br><br>
+            <label for="date">DATE OF ENROLLMENT</label>
+            <input type="date" required id="date" name="date"><br><br>
+            <label for="">SKILLS</label><br><br>
+            <input type="checkbox" id="html" name="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="java" name="java">
+            <label for="java">JAVA</label>
+            <input type="checkbox" id="sql" name="sql">
+            <label for="sql">SQL</label><br><br>
+            <label for="py">PASSOUT YEAR</label>
+            <input list="yy" id="py">
+            <datalist id="yy">
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+            </datalist><br><br>
+            <label for="">COURSE</label><br><br>
+            <input type="radio" id="btech" name="course">
+            <label for="btech">BTECH</label>
+            <input type="radio" id="bsc" name="course">
+            <label for="bsc">BSC</label>
+            <input type="radio" id="bca" name="course">
+            <label for="bca">BCA</label><br><br>
+            <label for="">BRANCH</label><br><br>
+            <input type="radio" id="cse" name="branch">
+            <label for="cse">CSE</label>
+            <input type="radio" id="mech" name="branch">
+            <label for="mech">MECH</label>
+            <input type="radio" id="civil" name="branch">
+            <label for="civil">CIVIL</label>
+            <input type="radio" id="ec" name="branch">
+            <label for="ec">EC</label><br><br>
+            <label for="resume">RESUME</label><br><br>
+            <input type="file" id="resume" name="resume"><br><br>
+            <a href="submit.html">Submit</a>
+
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
